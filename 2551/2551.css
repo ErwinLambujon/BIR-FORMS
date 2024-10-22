@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 932px;
+  margin: auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.payee-name {
+  top: 22.2%;
+  left: 18.24%;
+}
+
+.tin-payee {
+  top: 18.2%;
+  left: 50.11%;
+}
+
+.registered-address {
+  top: 25.8%;
+  left: 17.17%;
+}
+.c-number {
+  top: 31.8%;
+  left: 10.17%;
+}
+.e-address {
+  top: 31.8%;
+  left: 50.17%;
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .overlay-text {
+    font-size: 12pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .payee-name {
+    top: 22.5%;
+    left: 18.24%;
+  }
+
+  .tin-payee {
+    top: 18.5%;
+    left: 40.11%;
+  }
+
+  .registered-address {
+    top: 25.8%;
+    left: 17.17%;
+  }
+
+  .c-number {
+    top: 32%;
+    left: 10.17%;
+  }
+  .e-address {
+    top: 32%;
+    left: 40.17%;
+  }
+}
+
+/* Adjustments for portrait orientation */
+@media print and (orientation: portrait) {
+  .container {
+    width: 100vw;
+    height: auto;
+  }
+
+  .overlay-text {
+    font-size: 1vw; /* Slightly larger font for portrait */
+  }
+  .payee-name {
+    top: 18%;
+    left: 18.24%;
+  }
+
+  .tin-payee {
+    top: 15%;
+    left: 40.11%;
+  }
+
+  .registered-address {
+    top: 21%;
+    left: 17.17%;
+  }
+
+  .c-number {
+    top: 26%;
+    left: 10.17%;
+  }
+  .e-address {
+    top: 26%;
+    left: 40.17%;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .overlay-text {
+    font-size: 12pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
